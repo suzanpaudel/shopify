@@ -31,6 +31,12 @@ h3 {
 }
 
 h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+h5 {
   font-size: 1.1rem;
   text-transform: uppercase;
   font-weight: 500;
@@ -81,6 +87,7 @@ ul {
   position: sticky;
   top: 0;
   background-color: #fff;
+  z-index: 2;
 
   .nav-links {
     width: 73%;
@@ -101,7 +108,7 @@ ul {
     display: flex;
 
     li {
-      margin-right: 1.5rem;
+      margin-left: 1.5rem;
     }
   }
 }
@@ -146,7 +153,64 @@ ul {
   padding: 3rem 0;
 }
 
+.latest-cloth-item {
+  padding: 0 0.5rem;
+  position: relative;
+  text-align: center;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .card {
+    position: absolute;
+    top: 75%;
+    left: 8%;
+    background-color: #fff;
+    width: 84%;
+    border-radius: 5px;
+    padding: 1rem;
+
+    h4 {
+      cursor: pointer;
+    }
+
+    h4:hover {
+      color: $primary-color;
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      text-transform: uppercase;
+
+      li {
+        cursor: pointer;
+        color: $primary-color;
+        font-weight: 500;
+        padding: 0.25rem;
+
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+
+    .lead {
+      color: $faint-color;
+    }
+
+    .card-footer {
+      text-align: center;
+      color: $faint-color;
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+}
+
 #img-gallery {
+  margin-top: 6.5rem;
   .text-primary {
     text-decoration: underline;
   }
@@ -182,7 +246,7 @@ ul {
 #newsletter {
   background-color: $primary-color;
 
-  h4 {
+  h5 {
     color: #fff;
   }
 
@@ -232,7 +296,7 @@ ul {
     flex: 1;
     padding: 0.5rem;
 
-    h4 {
+    h5 {
       color: #000;
     }
 

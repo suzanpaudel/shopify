@@ -28,6 +28,12 @@ h3 {
 }
 
 h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+h5 {
   font-size: 1.1rem;
   text-transform: uppercase;
   font-weight: 500;
@@ -78,6 +84,7 @@ ul {
   position: sticky;
   top: 0;
   background-color: #fff;
+  z-index: 2;
 }
 
 #navbar .nav-links {
@@ -100,7 +107,7 @@ ul {
 }
 
 #navbar .user-icons li {
-  margin-right: 1.5rem;
+  margin-left: 1.5rem;
 }
 
 #showcase {
@@ -143,6 +150,67 @@ ul {
   padding: 3rem 0;
 }
 
+.latest-cloth-item {
+  padding: 0 0.5rem;
+  position: relative;
+  text-align: center;
+}
+
+.latest-cloth-item img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.latest-cloth-item .card {
+  position: absolute;
+  top: 75%;
+  left: 8%;
+  background-color: #fff;
+  width: 84%;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.latest-cloth-item .card h4 {
+  cursor: pointer;
+}
+
+.latest-cloth-item .card h4:hover {
+  color: #427cfa;
+}
+
+.latest-cloth-item .card ul {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.latest-cloth-item .card ul li {
+  cursor: pointer;
+  color: #427cfa;
+  font-weight: 500;
+  padding: 0.25rem;
+}
+
+.latest-cloth-item .card ul li:hover {
+  color: #000;
+}
+
+.latest-cloth-item .card .lead {
+  color: #838383;
+}
+
+.latest-cloth-item .card .card-footer {
+  text-align: center;
+  color: #838383;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#img-gallery {
+  margin-top: 6.5rem;
+}
+
 #img-gallery .text-primary {
   text-decoration: underline;
 }
@@ -177,7 +245,7 @@ ul {
   background-color: #427cfa;
 }
 
-#newsletter h4 {
+#newsletter h5 {
   color: #fff;
 }
 
@@ -231,7 +299,7 @@ ul {
   padding: 0.5rem;
 }
 
-#basic-info .info-box h4 {
+#basic-info .info-box h5 {
   color: #000;
 }
 
