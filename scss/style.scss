@@ -1,4 +1,5 @@
 $primary-color: #427cfa;
+$faint-color: #838383;
 
 * {
   margin: 0;
@@ -23,8 +24,22 @@ h2 {
   font-weight: 400;
 }
 
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
 p {
-  margin: 1rem 0;
+  font-weight: 300;
+  margin: 0.5rem 0;
 }
 
 a {
@@ -52,6 +67,14 @@ ul {
   border-radius: 5px;
   background-color: $primary-color;
   color: #fff;
+}
+
+.text-primary {
+  color: $primary-color;
+}
+
+.section-heading {
+  text-align: center;
 }
 
 #navbar {
@@ -102,8 +125,151 @@ ul {
 
     .lead {
       font-size: 1.1rem;
-      font-weight: 300;
       margin-bottom: 2rem;
+    }
+  }
+}
+
+.py-1 {
+  padding: 0.5rem 0;
+}
+
+.py-2 {
+  padding: 1.25rem 0;
+}
+
+.py-3 {
+  padding: 2rem 0;
+}
+
+.py-4 {
+  padding: 3rem 0;
+}
+
+#img-gallery {
+  .text-primary {
+    text-decoration: underline;
+  }
+
+  .cloth-gallery {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    .cloth-item > img {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+}
+
+#services {
+  .service {
+    display: flex;
+    text-align: left;
+    i {
+      color: $primary-color;
+      margin-right: 1.3rem;
+      align-self: top;
+      margin-bottom: 0;
+    }
+
+    p {
+      color: $faint-color;
+    }
+  }
+}
+
+#newsletter {
+  background-color: $primary-color;
+
+  h4 {
+    color: #fff;
+  }
+
+  .form-group {
+    display: flex;
+    align-items: center;
+    width: 55%;
+    .form-field {
+      display: block;
+      width: 80%;
+      padding: 0.5rem 1rem;
+      font-weight: 400;
+      font-family: inherit;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+
+    span {
+      text-transform: uppercase;
+      padding: 0.5rem 1.25rem;
+      display: block;
+      background-color: black;
+      color: #fff;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    li {
+      margin-left: 1.25rem;
+    }
+    i {
+      color: #fff;
+    }
+  }
+}
+
+#basic-info {
+  background-color: #f7f7f7;
+  color: $faint-color;
+  font-weight: 300;
+
+  .info-box {
+    align-self: start;
+    flex: 1;
+    padding: 0.5rem;
+
+    h4 {
+      color: #000;
+    }
+
+    ul {
+      padding: 0.5rem 0;
+
+      li {
+        margin: 0.25rem 0;
+
+        .contact-title {
+          color: #000;
+          text-transform: uppercase;
+        }
+
+        a {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+#footer {
+  .lead {
+    display: inline-block;
+    margin-left: 0.5rem;
+    color: $faint-color;
+    font-weight: 300;
+  }
+
+  .payments ul {
+    display: flex;
+
+    img {
+      max-width: 80%;
+      display: inline-block;
+      padding-top: 0.5rem;
     }
   }
 }

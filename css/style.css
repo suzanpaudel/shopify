@@ -21,8 +21,22 @@ h2 {
   font-weight: 400;
 }
 
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
 p {
-  margin: 1rem 0;
+  font-weight: 300;
+  margin: 0.5rem 0;
 }
 
 a {
@@ -50,6 +64,14 @@ ul {
   border-radius: 5px;
   background-color: #427cfa;
   color: #fff;
+}
+
+.text-primary {
+  color: #427cfa;
+}
+
+.section-heading {
+  text-align: center;
 }
 
 #navbar {
@@ -102,7 +124,148 @@ ul {
 
 #showcase .showcase-content .lead {
   font-size: 1.1rem;
-  font-weight: 300;
   margin-bottom: 2rem;
+}
+
+.py-1 {
+  padding: 0.5rem 0;
+}
+
+.py-2 {
+  padding: 1.25rem 0;
+}
+
+.py-3 {
+  padding: 2rem 0;
+}
+
+.py-4 {
+  padding: 3rem 0;
+}
+
+#img-gallery .text-primary {
+  text-decoration: underline;
+}
+
+#img-gallery .cloth-gallery {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+#img-gallery .cloth-gallery .cloth-item > img {
+  object-fit: cover;
+  width: 100%;
+}
+
+#services .service {
+  display: flex;
+  text-align: left;
+}
+
+#services .service i {
+  color: #427cfa;
+  margin-right: 1.3rem;
+  align-self: top;
+  margin-bottom: 0;
+}
+
+#services .service p {
+  color: #838383;
+}
+
+#newsletter {
+  background-color: #427cfa;
+}
+
+#newsletter h4 {
+  color: #fff;
+}
+
+#newsletter .form-group {
+  display: flex;
+  align-items: center;
+  width: 55%;
+}
+
+#newsletter .form-group .form-field {
+  display: block;
+  width: 80%;
+  padding: 0.5rem 1rem;
+  font-weight: 400;
+  font-family: inherit;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#newsletter .form-group span {
+  text-transform: uppercase;
+  padding: 0.5rem 1.25rem;
+  display: block;
+  background-color: black;
+  color: #fff;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#newsletter .social-icons {
+  display: flex;
+}
+
+#newsletter .social-icons li {
+  margin-left: 1.25rem;
+}
+
+#newsletter .social-icons i {
+  color: #fff;
+}
+
+#basic-info {
+  background-color: #f7f7f7;
+  color: #838383;
+  font-weight: 300;
+}
+
+#basic-info .info-box {
+  align-self: start;
+  flex: 1;
+  padding: 0.5rem;
+}
+
+#basic-info .info-box h4 {
+  color: #000;
+}
+
+#basic-info .info-box ul {
+  padding: 0.5rem 0;
+}
+
+#basic-info .info-box ul li {
+  margin: 0.25rem 0;
+}
+
+#basic-info .info-box ul li .contact-title {
+  color: #000;
+  text-transform: uppercase;
+}
+
+#basic-info .info-box ul li a {
+  color: #427cfa;
+}
+
+#footer .lead {
+  display: inline-block;
+  margin-left: 0.5rem;
+  color: #838383;
+  font-weight: 300;
+}
+
+#footer .payments ul {
+  display: flex;
+}
+
+#footer .payments ul img {
+  max-width: 80%;
+  display: inline-block;
+  padding-top: 0.5rem;
 }
 /*# sourceMappingURL=style.css.map */
