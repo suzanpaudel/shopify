@@ -52,6 +52,7 @@ a {
 
 ul {
   list-style: none;
+  padding-top: 0.5rem;
 }
 
 .container {
@@ -78,6 +79,36 @@ ul {
 
 .section-heading {
   text-align: center;
+}
+
+.card-items {
+  z-index: 3;
+  padding: 2rem 3rem;
+  box-shadow: 1px 1px 2px 1px #d8d8d8, -1px -1px 2px 1px #d8d8d8;
+  font-size: 1rem;
+  background-color: #fff;
+  text-transform: capitalize;
+}
+
+.card-items a {
+  color: #838383;
+}
+
+#page-card {
+  display: none;
+  position: absolute;
+  width: 300px;
+  top: 45px;
+  left: 450px;
+}
+
+#shop-card {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 400px;
+  width: 800px;
+  justify-content: space-between;
 }
 
 #navbar {
@@ -117,19 +148,19 @@ ul {
   background-size: cover;
   height: 100vh;
   color: #333;
-  margin-top: -45px;
+  position: relative;
 }
 
 #showcase .showcase-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  height: 100%;
+  animation: animate1 1s ease-out;
 }
 
-#showcase .showcase-content .lead {
+#showcase .showcase-content p {
   font-size: 1.1rem;
   margin-bottom: 2rem;
 }
@@ -297,7 +328,7 @@ ul {
   color: #000;
 }
 
-.latest-cloth-item .card .lead {
+.latest-cloth-item .card p {
   color: #838383;
 }
 
@@ -404,10 +435,6 @@ ul {
   color: #000;
 }
 
-#basic-info .info-box ul {
-  padding: 0.5rem 0;
-}
-
 #basic-info .info-box ul li {
   margin: 0.25rem 0;
 }
@@ -436,5 +463,14 @@ ul {
   max-width: 80%;
   display: inline-block;
   padding-top: 0.5rem;
+}
+
+@keyframes animate1 {
+  from {
+    transform: translate(-50%, 100%);
+  }
+  to {
+    transform: translate(-50%, -50%);
+  }
 }
 /*# sourceMappingURL=style.css.map */
