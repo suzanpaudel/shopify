@@ -2,6 +2,7 @@ let pageNav = document.getElementById('pages');
 let pageCard = document.getElementById('page-card');
 let shopNav = document.getElementById('shop');
 let shopCard = document.getElementById('shop-card');
+let categoryImg = document.getElementsByClassName('.item-img');
 
 function displayPage() {
   pageCard.style.display = 'block';

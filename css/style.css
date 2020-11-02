@@ -183,7 +183,7 @@ ul {
 }
 
 #categories .item-img:hover {
-  transform: scale(1.1);
+  transform: scale(1.12);
 }
 
 #categories .women {
@@ -246,6 +246,14 @@ ul {
   transform: scale(1);
   transition: transform 0.5s;
   cursor: pointer;
+}
+
+#arrivals .arrivals-showcase .arrivals-item img:hover {
+  transform: scale(1.1);
+}
+
+#arrivals .arrivals-showcase .arrivals-item img:hover .card {
+  transform: scale(1.1);
 }
 
 #arrivals .arrivals-showcase .arrivals-item .card {

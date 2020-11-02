@@ -102,16 +102,15 @@ ul {
   position: absolute;
   width: 300px;
   top: 45px;
-  left: 450px;
+  left: 300px;
 }
 
 #shop-card {
-  display: none;
+  display: flex;
   position: absolute;
   top: 45px;
-  left: 400px;
+  left: 300px;
   width: 800px;
-  // display: flex;
   justify-content: space-between;
 }
 
@@ -185,9 +184,8 @@ ul {
     transform: scale(1);
     transition: transform 0.5s;
     cursor: pointer;
-
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.12);
     }
   }
 
@@ -251,6 +249,10 @@ ul {
         transform: scale(1);
         transition: transform 0.5s;
         cursor: pointer;
+
+        &:hover {
+          transform: scale(1.1);
+        }
       }
 
       .card {
