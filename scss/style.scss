@@ -106,7 +106,7 @@ ul {
 }
 
 #shop-card {
-  display: flex;
+  display: none;
   position: absolute;
   top: 45px;
   left: 300px;
@@ -229,6 +229,70 @@ ul {
       }
     }
   }
+}
+
+.trending-products {
+  min-height: 30em;
+  padding-top: 2em;
+  margin-left: 0.3em;
+  text-align: center;
+}
+
+#trending-clothes-list {
+  display: grid;
+  grid-column-gap: 0.5rem;
+  grid-template-columns: repeat(4, 1fr);
+
+  .trending-clothes-img {
+    position: relative;
+    width: 100%;
+  }
+
+  .details {
+    height: 8em;
+    position: relative;
+    text-align: center;
+    padding: 1rem;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.product1:hover > .details {
+  background-color: white;
+  transform: translateY(-60px);
+}
+
+.product1:hover > .details > .add-to-cart-btn {
+  display: inline-block;
+  text-align: center;
+}
+
+.product-type {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.product-price {
+  font-weight: 500;
+}
+
+.add-to-cart-btn {
+  background-color: $primary-color;
+  border: none;
+  border-radius: 0.5em;
+  text-align: center;
+  color: #ffffff;
+  display: none;
+  padding: 0.75rem 1rem;
+}
+
+.rating-stars {
+  font-size: 12px;
+  padding-top: 0;
+}
+
+.fa-star {
+  color: orange;
 }
 
 #arrivals {
